@@ -18,7 +18,7 @@ Additionally, it has some MacOS-specific quirks:
 - having :/; and q/Q available at their standard Dvorak locations, behind the Option key
 - having a macron (ō etc.) -producing dead key, produced by Option-D as an extension to the acute (á), two dots (ä), circumflex (â), grave (à) and tilde (ã) dead keys provided by the MacOS Dvorak layout.
 
-## My JIS keyboard always produces some other alphabet layout having pressed the 英数/eisuu key!?
+## My JIS keyboard always produces some other alphabet layout having pressed the 英数/eisū key!?
 
 This is unfortunate, but recent MacOSes consider custom keyboard layouts as second class citizens and even as a security risk. (A baseless accusation, in case of the declarative *.keylayout format.) They don't let your custom keyboard layout to take the place of a default layout provided by the OS.
 
