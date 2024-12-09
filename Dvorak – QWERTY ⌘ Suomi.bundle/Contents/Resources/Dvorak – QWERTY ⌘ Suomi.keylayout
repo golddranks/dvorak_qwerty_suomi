@@ -1,6 +1,7 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!---->
+<!--Last edited by Ukelele version 396 on 2024-12-08 at 18:22 (JST)-->
 <keyboard group="126" id="-23364" name="Dvorak – QWERTY ⌘ Suomi" maxout="1">
     <layouts>
         <layout first="0" last="0" mapSet="1fc" modifiers="f4"/>
@@ -49,8 +50,8 @@
             <key code="3" action="a_u"/>
             <key code="4" output="d"/>
             <key code="5" action="a_i"/>
-            <key code="6" output=";"/>
-            <key code="7" output="q"/>
+            <key code="6" output="ä"/>
+            <key code="7" output="ö"/>
             <key code="8" output="j"/>
             <key code="9" output="k"/>
             <key code="10" output="§"/>
@@ -158,8 +159,8 @@
             <key code="3" action="a_U"/>
             <key code="4" output="D"/>
             <key code="5" action="a_I"/>
-            <key code="6" output=":"/>
-            <key code="7" output="Q"/>
+            <key code="6" output="Ä"/>
+            <key code="7" output="Ö"/>
             <key code="8" output="J"/>
             <key code="9" output="K"/>
             <key code="10" output="±"/>
@@ -376,8 +377,8 @@
             <key code="3" action="a_twodots"/>
             <key code="4" action="a_macron"/>
             <key code="5" action="a_circumflex"/>
-            <key code="6" output="…"/>
-            <key code="7" output="œ"/>
+            <key code="6" output=":"/>
+            <key code="7" output="q"/>
             <key code="8" output="∆"/>
             <key code="9" output="˚"/>
             <key code="10" output="§"/>
@@ -485,8 +486,8 @@
             <key code="3" output="¨"/>
             <key code="4" output="Î"/>
             <key code="5" output="ˆ"/>
-            <key code="6" output="Ú"/>
-            <key code="7" output="Œ"/>
+            <key code="6" output=";"/>
+            <key code="7" output="Q"/>
             <key code="8" output="Ô"/>
             <key code="9" output=""/>
             <key code="10" output="±"/>
@@ -703,7 +704,7 @@
             <key code="3" output="&#x0006;"/>
             <key code="4" output="&#x0008;"/>
             <key code="5" output="&#x0007;"/>
-            <key code="6" output="&#x001A;"/>
+            <key code="6" output=";"/>
             <key code="7" output="&#x0018;"/>
             <key code="8" output="&#x0003;"/>
             <key code="9" output="&#x0016;"/>
@@ -712,7 +713,7 @@
             <key code="12" output="&#x0011;"/>
             <key code="13" output="&#x0017;"/>
             <key code="14" output="&#x0005;"/>
-            <key code="15" output="&#x0012;"/>
+            <key code="15" output="q"/>
             <key code="16" output="&#x0019;"/>
             <key code="17" output="&#x0014;"/>
             <key code="18" output="1"/>
@@ -1106,141 +1107,141 @@
         </keyMap>
     </keyMapSet>
     <actions>
-        <action id="a_macron">
-            <when state="none" next="s_macron"/>
+        <action id="a_A">
+            <when state="none" output="A"/>
+            <when state="a_macron" output="Ā"/>
+            <when state="s_acute" output="Á"/>
+            <when state="s_circumflex" output="Â"/>
+            <when state="s_grave" output="À"/>
+            <when state="s_tilde" output="Ã"/>
+            <when state="s_twodots" output="Ä"/>
         </action>
-        <action id="a_acute">
-            <when state="none" next="s_acute"/>
+        <action id="a_E">
+            <when state="none" output="E"/>
+            <when state="a_macron" output="Ē"/>
+            <when state="s_acute" output="É"/>
+            <when state="s_circumflex" output="Ê"/>
+            <when state="s_grave" output="È"/>
+            <when state="s_twodots" output="Ë"/>
         </action>
-        <action id="a_twodots">
-            <when state="none" next="s_twodots"/>
-        </action>
-        <action id="a_circumflex">
-            <when state="none" next="s_circumflex"/>
-        </action>
-        <action id="a_tilde">
-            <when state="none" next="s_tilde"/>
-        </action>
-        <action id="a_grave">
-            <when state="none" next="s_grave"/>
-        </action>
-        <action id="a_Y">
-            <when state="none" output="Y"/>
-            <when state="s_twodots" output="Ÿ"/>
-            <when state="a_macron" output="Ȳ"/>
-        </action>
-        <action id="a_y">
-            <when state="none" output="y"/>
-            <when state="s_twodots" output="ÿ"/>
-            <when state="a_macron" output="ȳ"/>
+        <action id="a_I">
+            <when state="none" output="I"/>
+            <when state="a_macron" output="Ī"/>
+            <when state="s_acute" output="Í"/>
+            <when state="s_circumflex" output="Î"/>
+            <when state="s_grave" output="Ì"/>
+            <when state="s_twodots" output="Ï"/>
         </action>
         <action id="a_N">
             <when state="none" output="N"/>
             <when state="s_tilde" output="Ñ"/>
         </action>
+        <action id="a_O">
+            <when state="none" output="O"/>
+            <when state="a_macron" output="Ō"/>
+            <when state="s_acute" output="Ó"/>
+            <when state="s_circumflex" output="Ô"/>
+            <when state="s_grave" output="Ò"/>
+            <when state="s_tilde" output="Õ"/>
+            <when state="s_twodots" output="Ö"/>
+        </action>
+        <action id="a_U">
+            <when state="none" output="U"/>
+            <when state="a_macron" output="Ū"/>
+            <when state="s_acute" output="Ú"/>
+            <when state="s_circumflex" output="Û"/>
+            <when state="s_grave" output="Ù"/>
+            <when state="s_twodots" output="Ü"/>
+        </action>
+        <action id="a_Y">
+            <when state="none" output="Y"/>
+            <when state="a_macron" output="Ȳ"/>
+            <when state="s_twodots" output="Ÿ"/>
+        </action>
+        <action id="a_a">
+            <when state="none" output="a"/>
+            <when state="a_macron" output="ā"/>
+            <when state="s_acute" output="á"/>
+            <when state="s_circumflex" output="â"/>
+            <when state="s_grave" output="à"/>
+            <when state="s_tilde" output="ã"/>
+            <when state="s_twodots" output="ä"/>
+        </action>
+        <action id="a_acute">
+            <when state="none" next="s_acute"/>
+        </action>
+        <action id="a_circumflex">
+            <when state="none" next="s_circumflex"/>
+        </action>
+        <action id="a_e">
+            <when state="none" output="e"/>
+            <when state="a_macron" output="ē"/>
+            <when state="s_acute" output="é"/>
+            <when state="s_circumflex" output="ê"/>
+            <when state="s_grave" output="è"/>
+            <when state="s_twodots" output="ë"/>
+        </action>
+        <action id="a_grave">
+            <when state="none" next="s_grave"/>
+        </action>
+        <action id="a_i">
+            <when state="none" output="i"/>
+            <when state="a_macron" output="ī"/>
+            <when state="s_acute" output="í"/>
+            <when state="s_circumflex" output="î"/>
+            <when state="s_grave" output="ì"/>
+            <when state="s_twodots" output="ï"/>
+        </action>
+        <action id="a_macron">
+            <when state="none" next="s_macron"/>
+        </action>
         <action id="a_n">
             <when state="none" output="n"/>
             <when state="s_tilde" output="ñ"/>
         </action>
-        <action id="a_space">
-            <when state="none" output=" "/>
-            <when state="s_acute" output="´"/>
-            <when state="s_twodots" output="¨"/>
-            <when state="s_circumflex" output="ˆ"/>
-            <when state="s_tilde" output="˜"/>
-            <when state="s_grave" output="`"/>
-        </action>
-        <action id="a_A">
-            <when state="none" output="A"/>
-            <when state="s_acute" output="Á"/>
-            <when state="s_twodots" output="Ä"/>
-            <when state="s_circumflex" output="Â"/>
-            <when state="s_tilde" output="Ã"/>
-            <when state="s_grave" output="À"/>
-            <when state="a_macron" output="Ā"/>
-        </action>
-        <action id="a_E">
-            <when state="none" output="E"/>
-            <when state="s_acute" output="É"/>
-            <when state="s_twodots" output="Ë"/>
-            <when state="s_circumflex" output="Ê"/>
-            <when state="s_grave" output="È"/>
-            <when state="a_macron" output="Ē"/>
-        </action>
-        <action id="a_I">
-            <when state="none" output="I"/>
-            <when state="s_acute" output="Í"/>
-            <when state="s_twodots" output="Ï"/>
-            <when state="s_circumflex" output="Î"/>
-            <when state="s_grave" output="Ì"/>
-            <when state="a_macron" output="Ī"/>
-        </action>
-        <action id="a_U">
-            <when state="none" output="U"/>
-            <when state="s_acute" output="Ú"/>
-            <when state="s_twodots" output="Ü"/>
-            <when state="s_circumflex" output="Û"/>
-            <when state="s_grave" output="Ù"/>
-            <when state="a_macron" output="Ū"/>
-        </action>
-        <action id="a_O">
-            <when state="none" output="O"/>
-            <when state="s_acute" output="Ó"/>
-            <when state="s_twodots" output="Ö"/>
-            <when state="s_circumflex" output="Ô"/>
-            <when state="s_tilde" output="Õ"/>
-            <when state="s_grave" output="Ò"/>
-            <when state="a_macron" output="Ō"/>
-        </action>
-        <action id="a_a">
-            <when state="none" output="a"/>
-            <when state="s_acute" output="á"/>
-            <when state="s_twodots" output="ä"/>
-            <when state="s_circumflex" output="â"/>
-            <when state="s_tilde" output="ã"/>
-            <when state="s_grave" output="à"/>
-            <when state="a_macron" output="ā"/>
-        </action>
-        <action id="a_e">
-            <when state="none" output="e"/>
-            <when state="s_acute" output="é"/>
-            <when state="s_twodots" output="ë"/>
-            <when state="s_circumflex" output="ê"/>
-            <when state="s_grave" output="è"/>
-            <when state="a_macron" output="ē"/>
-        </action>
-        <action id="a_i">
-            <when state="none" output="i"/>
-            <when state="s_acute" output="í"/>
-            <when state="s_twodots" output="ï"/>
-            <when state="s_circumflex" output="î"/>
-            <when state="s_grave" output="ì"/>
-            <when state="a_macron" output="ī"/>
-        </action>
-        <action id="a_u">
-            <when state="none" output="u"/>
-            <when state="s_acute" output="ú"/>
-            <when state="s_twodots" output="ü"/>
-            <when state="s_circumflex" output="û"/>
-            <when state="s_grave" output="ù"/>
-            <when state="a_macron" output="ū"/>
-        </action>
         <action id="a_o">
             <when state="none" output="o"/>
             <when state="s_acute" output="ó"/>
-            <when state="s_twodots" output="ö"/>
             <when state="s_circumflex" output="ô"/>
-            <when state="s_tilde" output="õ"/>
             <when state="s_grave" output="ò"/>
             <when state="s_macron" output="ō"/>
+            <when state="s_tilde" output="õ"/>
+            <when state="s_twodots" output="ö"/>
+        </action>
+        <action id="a_space">
+            <when state="none" output=" "/>
+            <when state="s_acute" output="´"/>
+            <when state="s_circumflex" output="ˆ"/>
+            <when state="s_grave" output="`"/>
+            <when state="s_tilde" output="˜"/>
+            <when state="s_twodots" output="¨"/>
+        </action>
+        <action id="a_tilde">
+            <when state="none" next="s_tilde"/>
+        </action>
+        <action id="a_twodots">
+            <when state="none" next="s_twodots"/>
+        </action>
+        <action id="a_u">
+            <when state="none" output="u"/>
+            <when state="a_macron" output="ū"/>
+            <when state="s_acute" output="ú"/>
+            <when state="s_circumflex" output="û"/>
+            <when state="s_grave" output="ù"/>
+            <when state="s_twodots" output="ü"/>
+        </action>
+        <action id="a_y">
+            <when state="none" output="y"/>
+            <when state="a_macron" output="ȳ"/>
+            <when state="s_twodots" output="ÿ"/>
         </action>
     </actions>
     <terminators>
         <when state="s_acute" output="´"/>
-        <when state="s_twodots" output="¨"/>
         <when state="s_circumflex" output="ˆ"/>
-        <when state="s_tilde" output="˜"/>
         <when state="s_grave" output="`"/>
         <when state="s_macron" output="¯"/>
+        <when state="s_tilde" output="˜"/>
+        <when state="s_twodots" output="¨"/>
     </terminators>
 </keyboard>
