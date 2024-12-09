@@ -1,7 +1,7 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!---->
-<!--Last edited by Ukelele version 396 on 2024-12-08 at 18:22 (JST)-->
+<!--Last edited by Ukelele version 396 on 2024-12-10 at 00:01 (JST)-->
 <keyboard group="126" id="-23364" name="Dvorak – QWERTY ⌘ Suomi" maxout="1">
     <layouts>
         <layout first="0" last="0" mapSet="1fc" modifiers="f4"/>
@@ -90,8 +90,8 @@
             <key code="43" output="w"/>
             <key code="44" output="z"/>
             <key code="45" output="b"/>
-            <key code="46" output="m"/>
-            <key code="47" output="v"/>
+            <key code="46" action="m"/>
+            <key code="47" action="v"/>
             <key code="48" output="&#x0009;"/>
             <key code="49" action="a_space"/>
             <key code="50" output="`"/>
@@ -1109,7 +1109,7 @@
     <actions>
         <action id="a_A">
             <when state="none" output="A"/>
-            <when state="a_macron" output="Ā"/>
+            <when state="s_macron" output="Ā"/>
             <when state="s_acute" output="Á"/>
             <when state="s_circumflex" output="Â"/>
             <when state="s_grave" output="À"/>
@@ -1118,7 +1118,7 @@
         </action>
         <action id="a_E">
             <when state="none" output="E"/>
-            <when state="a_macron" output="Ē"/>
+            <when state="s_macron" output="Ē"/>
             <when state="s_acute" output="É"/>
             <when state="s_circumflex" output="Ê"/>
             <when state="s_grave" output="È"/>
@@ -1126,7 +1126,7 @@
         </action>
         <action id="a_I">
             <when state="none" output="I"/>
-            <when state="a_macron" output="Ī"/>
+            <when state="s_macron" output="Ī"/>
             <when state="s_acute" output="Í"/>
             <when state="s_circumflex" output="Î"/>
             <when state="s_grave" output="Ì"/>
@@ -1138,7 +1138,7 @@
         </action>
         <action id="a_O">
             <when state="none" output="O"/>
-            <when state="a_macron" output="Ō"/>
+            <when state="s_macron" output="Ō"/>
             <when state="s_acute" output="Ó"/>
             <when state="s_circumflex" output="Ô"/>
             <when state="s_grave" output="Ò"/>
@@ -1147,7 +1147,7 @@
         </action>
         <action id="a_U">
             <when state="none" output="U"/>
-            <when state="a_macron" output="Ū"/>
+            <when state="s_macron" output="Ū"/>
             <when state="s_acute" output="Ú"/>
             <when state="s_circumflex" output="Û"/>
             <when state="s_grave" output="Ù"/>
@@ -1155,12 +1155,12 @@
         </action>
         <action id="a_Y">
             <when state="none" output="Y"/>
-            <when state="a_macron" output="Ȳ"/>
+            <when state="s_macron" output="Ȳ"/>
             <when state="s_twodots" output="Ÿ"/>
         </action>
         <action id="a_a">
             <when state="none" output="a"/>
-            <when state="a_macron" output="ā"/>
+            <when state="s_macron" output="ā"/>
             <when state="s_acute" output="á"/>
             <when state="s_circumflex" output="â"/>
             <when state="s_grave" output="à"/>
@@ -1175,7 +1175,7 @@
         </action>
         <action id="a_e">
             <when state="none" output="e"/>
-            <when state="a_macron" output="ē"/>
+            <when state="s_macron" output="ē"/>
             <when state="s_acute" output="é"/>
             <when state="s_circumflex" output="ê"/>
             <when state="s_grave" output="è"/>
@@ -1186,7 +1186,7 @@
         </action>
         <action id="a_i">
             <when state="none" output="i"/>
-            <when state="a_macron" output="ī"/>
+            <when state="s_macron" output="ī"/>
             <when state="s_acute" output="í"/>
             <when state="s_circumflex" output="î"/>
             <when state="s_grave" output="ì"/>
@@ -1224,7 +1224,7 @@
         </action>
         <action id="a_u">
             <when state="none" output="u"/>
-            <when state="a_macron" output="ū"/>
+            <when state="s_macron" output="ū"/>
             <when state="s_acute" output="ú"/>
             <when state="s_circumflex" output="û"/>
             <when state="s_grave" output="ù"/>
@@ -1232,8 +1232,16 @@
         </action>
         <action id="a_y">
             <when state="none" output="y"/>
-            <when state="a_macron" output="ȳ"/>
+            <when state="s_macron" output="ȳ"/>
             <when state="s_twodots" output="ÿ"/>
+        </action>
+        <action id="m">
+            <when state="none" output="m"/>
+            <when state="s_macron" output="m"/>
+        </action>
+        <action id="v">
+            <when state="none" output="v"/>
+            <when state="s_macron" output="v"/>
         </action>
     </actions>
     <terminators>
