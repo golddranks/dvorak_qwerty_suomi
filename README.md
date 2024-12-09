@@ -30,7 +30,7 @@ You can fix this using [Karabiner-Elements](https://karabiner-elements.pqrs.org/
     "manipulators": [
         {
             "from": { "key_code": "japanese_eisuu" },
-            "to": [{ "select_input_source": { "language": "fi" } }],
+            "to": [{ "select_input_source": { "input_source_id": "eu.drasa.keyboardlayout.dvorak_qwerty_suomi" }}],
             "type": "basic"
         }
     ]

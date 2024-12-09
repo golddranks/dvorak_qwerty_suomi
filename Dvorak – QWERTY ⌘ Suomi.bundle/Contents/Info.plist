@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIdentifier</key>
-	<string>org.sil.ukelele.keyboardlayout.unsavedukeleledocument</string>
+	<string>eu.drasa.keyboardlayout.dvorak_qwerty_suomi</string>
 	<key>CFBundleName</key>
 	<string>Dvorak – QWERTY ⌘ Suomi</string>
 	<key>CFBundleVersion</key>
@@ -15,7 +15,7 @@
 		<key>TISIconIsTemplate</key>
 		<false/>
 		<key>TISInputSourceID</key>
-		<string>org.sil.ukelele.keyboardlayout.unsavedukeleledocument.dvorak–qwerty⌘suomi</string>
+		<string>eu.drasa.keyboardlayout.dvorak_qwerty_suomi</string>
 		<key>TISIntendedLanguage</key>
 		<string>fi</string>
 	</dict>
