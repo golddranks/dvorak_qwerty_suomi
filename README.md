@@ -12,10 +12,9 @@ This is a custom MacOS keyboard layout based on the Apple-provided Dvorak – QW
 
 This layout differs from standard Dvorak by:
 - having ; replaced by ä
-- having q replaced by ö
-
-Additionally, it has some MacOS-specific quirks:
-- having :/; and q/Q available at their standard Dvorak locations, behind the Option key
+- having ä, ö, : and ; available behind a, o, e, u, behind the Control key
+- having ä, ö, : and ; available behind a, o, ä, q, behind the Option key
+- having å available behind Option-'
 - having a macron (ō etc.) -producing dead key, produced by Option-D as an extension to the acute (á), two dots (ä), circumflex (â), grave (à) and tilde (ã) dead keys provided by the MacOS Dvorak layout.
 
 ## My JIS keyboard always produces some other alphabet layout having pressed the 英数/eisū key!?
