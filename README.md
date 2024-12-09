@@ -22,10 +22,19 @@ Additionally, it has some MacOS-specific quirks:
 
 This is unfortunate, but recent MacOSes consider custom keyboard layouts as second class citizens and even as a security risk. (A baseless accusation, in case of the declarative *.keylayout format.) They don't let your custom keyboard layout to take the place of a default layout provided by the OS.
 
-You can fix this using [Karabiner-Elements](https://karabiner-elements.pqrs.org/). After installing it, add the following script as a Custom script:
+You can fix this using [Karabiner-Elements](https://karabiner-elements.pqrs.org/). After installing it, add the following script as a "Complex modification" script:
 
 ```
-TODO
+{
+    "description": "Force Dvorak – QWERTY ⌘ Suomi on Eisu key",
+    "manipulators": [
+        {
+            "from": { "key_code": "japanese_eisuu" },
+            "to": [{ "select_input_source": { "language": "fi" } }],
+            "type": "basic"
+        }
+    ]
+}
 ```
 
 ## Why Dvorak QWERTY ⌘?
