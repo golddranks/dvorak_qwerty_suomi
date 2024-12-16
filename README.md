@@ -12,8 +12,8 @@ This is a custom MacOS keyboard layout based on the Apple-provided Dvorak – QW
 
 This layout differs from standard Dvorak by:
 - having ; replaced by ä
-- having ä, ö, : and ; available behind a, o, e, u, behind the Control key
-- having ä, ö, : and ; available behind a, o, ä, q, behind the Option key
+- having Shift-; still produce : (because it's such a common character when using computer)
+- having ä, ö, ; and : available behind a, o, ;, q (respectively), behind the Option key
 - having å available behind Option-'
 - having a macron (ō etc.) -producing dead key, produced by Option-D as an extension to the acute (á), two dots (ä), circumflex (â), grave (à) and tilde (ã) dead keys provided by the MacOS Dvorak layout.
 
@@ -29,7 +29,9 @@ You can fix this using [Karabiner-Elements](https://karabiner-elements.pqrs.org/
     "manipulators": [
         {
             "from": { "key_code": "japanese_eisuu" },
-            "to": [{ "select_input_source": { "input_source_id": "eu.drasa.keyboardlayout.dvorak_qwerty_suomi" }}],
+            "to": [{ "select_input_source": {
+              "input_source_id": "eu.drasa.keyboardlayout.dvorak_qwerty_suomi.dvorak–qwerty⌘suomi"
+            }}],
             "type": "basic"
         }
     ]
